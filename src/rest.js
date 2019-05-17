@@ -19,15 +19,7 @@ server.pre((req, res, next) => {
 
 
 let nextId = 1;
-let items = [
-    {
-        id: 0,
-        name: "test",
-        tags: ["test1", "test2"],
-        url: "https://test1.org",
-        done: false
-    }
-];
+let items = [];
 
 server.get('/items', (req, res, next) => {
     res.send(items);
